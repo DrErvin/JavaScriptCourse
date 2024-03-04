@@ -133,3 +133,4 @@ else {
 }
 //hej ovo je git commitano
 console.log("ovo je git commitano");
+console.log("Ovo je duplo commitano sa lapitopa");
