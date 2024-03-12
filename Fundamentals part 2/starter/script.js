@@ -12,7 +12,7 @@ const describePopulation = (country, population) => {
 
 //CODING CHALLANGE #1
 
-const dolphinsScore1 = 85;
+/*const dolphinsScore1 = 85;
 const dolphinsScore2 = 54;
 const dolphinsScore3 = 41;
 const koalaScore1 = 23;
@@ -35,6 +35,25 @@ else{
  }
 }
 console.log(checkWinner(dolphinsAvgScore, koalasAvgScore));
+*/
+//CODING CHALLANGE #2
+
+/*function calcTip(inputBill){
+    let tip = 1.20;
+    if (inputBill > 50 && inputBill < 300){
+        return tip = 1.15;
+    } else return tip;
+}*/
+function calcTip(inputBill){
+    return inputBill > 50 && inputBill < 300 ? inputBill * 0.15 : 
+    inputBill * 0.2;
+}
+let bills = [125, 555, 44];
+let tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
+console.log(bills, tips);
+console.log(total);
+
 
 
 
