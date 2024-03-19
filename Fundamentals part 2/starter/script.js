@@ -2,7 +2,7 @@
 /*
 const  percentageOfWorld3 = population => (population / 7900)*100;
 const percentageOfWorld1 = percentageOfWorld3(141);
-console.log(percentageOfWorld1); 
+console.log(percentageOfWorld1);
 
 const describePopulation = (country, population) => {
     const percentage = percentageOfWorld3(population);
@@ -27,7 +27,7 @@ if (dolphinsAvgScore >= 2*koalasAvgScore){
 return `Doplhins win (${dolphinsAvgScore} vs ${koalasAvgScore})`;
 }
 else if (koalasAvgScore >= 2*dolphinsAvgScore)
-{ 
+{
     return `Koalas win (${koalasAvgScore} vs ${dolphinsAvgScore})`;
 }
 else{
@@ -44,6 +44,7 @@ console.log(checkWinner(dolphinsAvgScore, koalasAvgScore));
         return tip = 1.15;
     } else return tip;
 }*/
+/*
 function calcTip(inputBill){
     return inputBill > 50 && inputBill < 300 ? inputBill * 0.15 : 
     inputBill * 0.2;
@@ -53,7 +54,32 @@ let tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 console.log(bills, tips);
 console.log(total);
+*/
+const myCountry = {
+    country: "Bosna",
+    capital: "Sarajevo",
+    language: "Bosanski",
+    population: 3,
+    neighbours: ["Srbija", "Hrtvatska", "Crna Gora"],
 
+    describe: function () {
+        console.log(`${this.country} has ${this.neighbours.
+            length} neighbours and the best one is: ${this.
+                neighbours[0]}`)
+    },
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ?
+            true : false;
+        // this.isIsland = !Boolean(this.neighbours.length);
+    }
+};
 
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
 
+myCountry.population += 2;
+console.log(myCountry.population)
+myCountry["population"] -= 2;
+console.log(myCountry.population)
 
