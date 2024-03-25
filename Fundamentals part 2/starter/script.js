@@ -46,7 +46,7 @@ console.log(checkWinner(dolphinsAvgScore, koalasAvgScore));
 }*/
 /*
 function calcTip(inputBill){
-    return inputBill > 50 && inputBill < 300 ? inputBill * 0.15 : 
+    return inputBill > 50 && inputBill < 300 ? inputBill * 0.15 :
     inputBill * 0.2;
 }
 let bills = [125, 555, 44];
@@ -55,23 +55,23 @@ const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 console.log(bills, tips);
 console.log(total);
 */
-const myCountry = {
-    country: "Bosna",
+/*const myCountry = {
+country: "Bosna",
     capital: "Sarajevo",
-    language: "Bosanski",
-    population: 3,
-    neighbours: ["Srbija", "Hrtvatska", "Crna Gora"],
+        language: "Bosanski",
+            population: 3,
+                neighbours: ["Srbija", "Hrtvatska", "Crna Gora"],
 
-    describe: function () {
-        console.log(`${this.country} has ${this.neighbours.
-            length} neighbours and the best one is: ${this.
-                neighbours[0]}`)
-    },
-    checkIsland: function () {
-        this.isIsland = this.neighbours.length === 0 ?
-            true : false;
-        // this.isIsland = !Boolean(this.neighbours.length);
-    }
+                    describe: function () {
+                        console.log(`${this.country} has ${this.neighbours.
+                            length} neighbours and the best one is: ${this.
+                                neighbours[0]}`)
+                    },
+checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ?
+        true : false;
+    // this.isIsland = !Boolean(this.neighbours.length);
+}
 };
 
 myCountry.describe();
@@ -82,4 +82,31 @@ myCountry.population += 2;
 console.log(myCountry.population)
 myCountry["population"] -= 2;
 console.log(myCountry.population)
+*/
+//  CODING CHALLANGE #3
+
+const mark = {
+    fullname: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        return this.bmi = this.mass / this.height ** 2;
+    }
+}
+const john = {
+    fullname: "John Smith",
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+}
+john.calcBMI();
+mark.calcBMI();
+console.log(`${john.fullname} BMI (${john.
+    bmi}) is higher than Mark's (${mark.
+        bmi})!`);
 
