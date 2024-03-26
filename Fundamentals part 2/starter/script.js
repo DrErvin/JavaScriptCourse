@@ -85,7 +85,7 @@ console.log(myCountry.population)
 */
 //  CODING CHALLANGE #3
 
-const mark = {
+/*const mark = {
     fullname: "Mark Miller",
     mass: 78,
     height: 1.69,
@@ -109,4 +109,58 @@ mark.calcBMI();
 console.log(`${john.fullname} BMI (${john.
     bmi}) is higher than Mark's (${mark.
         bmi})!`);
+*/
+/*
+function percentageOfWorld(inputPop) {
+    return (inputPop / 7900)*100;
+}
+
+const populations = [2,35,89,65];
+const percentage2 = [];
+
+for (let i = 0;i < populations.length;i++){
+    let caclulation = percentageOfWorld(populations[i]);
+    percentage2.push(caclulation);
+}
+console.log(percentage2);
+*/
+/*const listOfNeighbors = [["Canada", "Mexico"], ["Spain"], ["Norway", 
+"Sweden", "Russia"]];
+for (let i = 0; i < listOfNeighbors.length; i++){
+    for (let k = 0; k < listOfNeighbors[i].length; k++){
+        //console.log(listOfNeighbors[i].length);
+        console.log(listOfNeighbors[i][k]);
+    }
+
+}*/
+//CODING CHALLANGE #4
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86 , 52];
+const tips = [];
+const totals = [];
+
+function calcTip(inputBill){
+    let tip = 1.20;
+    if (inputBill > 50 && inputBill < 300){
+        return tip = 1.15;
+    } else return tip;
+}
+for (let i = 0; i < bills.length; i++){
+    tips.push(calcTip(bills[i]));
+    console.log(tips[i]);
+    let totalCalc = bills[i] * tips[i];
+    totals.push(totalCalc);
+}
+console.log(tips);
+console.log(totals);
+
+function calcAverage(arr){
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++){
+        sum = sum + arr[i];
+    }
+    
+    const avg = sum / arr.length;
+    return avg;
+}
+console.log(calcAverage(totals));
 
